@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<!--  
+
+
+
+	<head> 태그
+	- 브라우저에게 전달할 문서의 정보를 담는 컨테이너 태그
+
+
+
+
+-->
+
+
+
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+			<!--  ex04_head.html  -->
+			
+			
+</body>
+</html>

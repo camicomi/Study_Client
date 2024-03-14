@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<!--  <body bgcolor = "#FF0000">  -->
+<body background = "images/dog.jpg">
+
+<!--  ex05_body.html  -->
+<!--  
+
+
+		<body> 태그
+		- 모든 출력 내용을 관리하는 컨테이너
+		
+		<body> 속성
+		1. bgcolor
+			- 문서 배경색
+			<body bgcolor = "yellow">
+			<body bgcolor = "#FF0000">
+			
+		2. background
+			- 문서 배경 이미지
+
+
+		
+		HTML의 색상 표현법(*****)
+		1. 색상명
+			- Named Color
+			- Well-known Color
+			- 미리 약속된 몇가지 색상명을 사용(140여가지)
+			- Web Color name
+			https://www.w3schools.com/tags/ref_colornames.asp
+			
+		2. RGB (주로 사용)
+			- Red + Green + Blue = 조합
+			- 각 색상의 단계: 256단계 지원(0~255 > 00~FF 16진수 표기)
+			- 256 X 256 X 256 = 16,777,216
+			- 16진수 표기
+			- 00 00 00(검정색) ~ FF FF FF (흰색)
+			- #FF0000 > 빨간색
+			- #00FF00 > 녹색
+			- #0000FF > 파란색
+			- #FFFF00 > 노랑
+			- #FF00FF > 보라색
+			- RGB 값이 동일하면 > 무채색
+			- 동일한 값이면
+			<body bgcolor = "#33FF99"> 를 <body bgcolor = "#3F9">로 줄일 수 있다
+			
+			- Window + shift + F 캡처 > 그림판 복사 > 스포이드 Pick > RGB 확인 가능
+			- 픽픽(https://picpick.net/) 
+			
+			HTML의 경로 표현법
+			- 웹페이지에서 자원의 경로를 표기하는 방법 > URL 표기법
+			- ClientTest > src > main > webapp > html > images
+			
+			경로 구분자
+			1. \
+				- 자바
+				- D:\class\code\java
+			2. /
+				- 웹
+				- http://localhost/client/images/dog.jpg
+				
+
+
+ -->
+
+</body>
+</html>

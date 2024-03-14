@@ -1,0 +1,32 @@
+<!-- 
+
+선언문(문서유형): 브라우저에게 현재 문서가 어떤 구성인지를 알려주는 역할
+
+ html이 아닌, DTD <!DOCTYPE html>
+
+
+-->
+
+<!--  다중라인 주석 , 단일 라인 주석이 없음 단축키:  ctrl+shl+/  -->
+
+<!--  
+
+	<html>
+	- html 태그
+	- 문서 전체를 감싸는 역할
+	- 
+
+
+ -->
+
+<!DOCTYPE html>
+<html> 
+	<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	</head>
+	<body>
+	ex01.html
+
+	</body>
+</html> 

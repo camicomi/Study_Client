@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!--  ex19_form.html -->
+	<!--  
+	
+	
+		<form> 자식 태그
+		- 입력 양식
+		
+		<input> 태그
+		- 단독 태그
+		- 인라인 태그
+	
+	 -->
+	 
+	 <h1> 입력 컨트롤 </h1>
+	 <form>
+	 
+	 	텍스트박스(단일라인): <input type="text">
+	 
+	 </form>
+
+</body>
+</html>

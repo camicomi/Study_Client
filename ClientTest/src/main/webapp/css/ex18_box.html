@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+
+        박스 모델
+        1. 테두리, border
+        2. 크기, width/height
+        3. 여백, padding/margin
+
+     -->
+    
+    <style>
+
+        .box {
+            /* 컨텐츠 영역의 사이즈*/
+            width: 200px;
+            height: 200px;
+            border: 10px solid black;
+        }
+
+        #box1 {background-color: tomato;}
+        #box2 {background-color: gold;}
+        #box3 {background-color: cornflowerblue;}
+
+        /* 우리가 보는 사이즈 패딩 + 보더 +  컨텐츠  */
+
+        #box1 {
+
+            margin-bottom: 40px;
+        }
+        #box2 {
+            margin-top: 30px;
+            /* 둘다 30 px 이면 30px 둘중 하나 큰 쪽이 있으면, 큰쪽으로 */
+
+
+            /* padding: 20px; /* 안쪽 여백, width, height 영향이 안미치는 크기 */
+            /* margin : 20px;   /* 바깥쪽 여백 */ 
+
+            /* margin-top: 30px;
+            margin-bottom: 30px;
+
+            padding-top: 30px; */
+
+            /* 위아래 다 쓰고 싶을때, 외우기 */
+            /* top > right > bottom > left */
+            /* margin: 30px 0px 50px 10px; */
+            /* top > left/right > bottom */
+            /* margin: 30px 0px 50px; */
+            /* top/bottom, left/right */
+            /* margin : 30px 0px; */
+            /* margin: 30px; */
+
+
+
+        }
+
+        html {
+            /* border: 10px solid red; */
+            padding: 0; /* 0만은 단위 생략 가능, 안먹으면 패딩이 아니란 것*/
+
+        }
+
+        body {
+
+            border: 10px solid blue;
+            margin: 0;
+
+            /* 여백이 보기 싫으면 margin을 0으로 */
+
+            /* <br>태그로 늘리지 말고.. 밑부분으로 답답하면 아래처럼 늘리기 */
+            /* margin-bottom: 300px; */
+            padding-bottom: 300px;
+
+
+
+
+        }
+
+        #txt-search {
+            outline: none;
+            border: 1px solid #4f4f4f;
+            padding: 5px 10px;
+
+        }
+
+        h2 {
+            margin-bottom: 0px;
+            margin-left: 0px;
+            padding-left: -100px; /* padding 음수를 가질 수 없다, margin은 가능*/
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- ex18_box.html -->
+
+    <h1>CSS 박스 모델</h1>
+
+    
+    <div id="box1" class="box">상자1</div> 
+    <div id="box2" class="box">상자2</div>
+    <div id="box3" class="box">상자3</div>
+
+    <h2>검색</h2>
+
+    <input type="text" id="txt-search" placeholder="검색어를 입력하세요.">
+
+    
+</body>
+</html>

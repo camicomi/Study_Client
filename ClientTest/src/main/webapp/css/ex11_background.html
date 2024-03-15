@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 
+        HTML 의 속성을 태그에 종속적이다.
+        - <body bgcolor=""> (O)
+        - <div bgcolor=""> (X)
+
+        CSS의 속성은 태그와 무관하다.
+        - 1개의 속성 > 모든 태그에 적용이 가능하다.
+        
+
+
+        background 속성
+        1. background-color
+            - 배경색
+        2. background-image
+            - 배경이미지
+        3. background-repeat
+            - 배경이미지 반복 제어
+            - repeat, repeat-x, repeat-y, no-repeat
+
+        4. background-position
+            - 배경이미지 위치
+            - 수평 : left, center, right or 수치
+            - 수직 : top, center, botton or 수치
+
+        5. background-attachment
+            - 배경이미지 고정
+            - scroll, fixed
+
+        CSS 색상 표현법
+        1. Color Name : red, yellow, blue..
+        2. RGB Color(HEX) : #000000 ~ #FFFFFF
+        3. RGB Color(DEC) : rgb(0, 0, 0) ~ rgb(255, 255, 255)
+        4. RGBA Color(DEC) : rgba(255,255,255,1), Alpha Channel(불투명도: 0~1)
+
+    
+    
+    -->
+
+    <style>
+
+        body {
+            /* background-color: rgba(45,51,215, .1); */
+            /* background-color : yellow; */
+            /* background-image: url('images/catty01.png'); */
+            /* background-image: url("images/catty01.png"); */
+            /* background-image: url(images/catty01.png); */
+
+        }
+
+        #box {
+            /* background-color: rgba(255, 255, 0, 1); 
+
+            background-image: url(images/catty01.png);
+            background-repeat: no-repeat; */
+            /* background-position: right top; */
+            /* background-position: 100px 100px; 단위를 반드시 적어야 한다 */
+            /*예를 들어 center는 상대값, px는 절대값이므로 창을 줄여도 자리 이동하지 않음*/
+            /* background-position: center center; */
+
+            background-image: url(images/wall03.jpg);
+            background-attachment: fixed;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- ex11_background.html -->
+
+    <!-- div#box>lorem300 -->
+    <div id="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad deserunt, alias officia ipsa magnam excepturi earum aut veniam quasi laboriosam. Nam enim odio perspiciatis exercitationem, rem alias ducimus voluptas sapiente, sint voluptatum explicabo mollitia corporis. Fugiat dolore voluptatum ut et sint accusantium dolores minima ea consectetur blanditiis minus ipsam voluptas aliquid in amet eligendi itaque aut beatae, tempora recusandae! Eaque veritatis dignissimos culpa neque minus porro pariatur hic cupiditate, consequuntur harum obcaecati doloremque veniam iure omnis! In inventore reiciendis excepturi est molestiae pariatur quis ea explicabo quas similique laudantium maxime et omnis adipisci, modi illum corrupti debitis exercitationem. Quod officiis dicta architecto ducimus ea ipsam pariatur, reprehenderit fugiat ad culpa laborum animi molestiae esse ipsum nisi eveniet impedit maiores rerum soluta odio. Corrupti minima optio eius, distinctio non, qui beatae voluptate quidem porro cumque totam eveniet tempora, nesciunt sed! Similique dignissimos mollitia deserunt quaerat minima maiores suscipit labore neque? Sint odio fuga quaerat ratione asperiores animi eius nisi tempora, rerum minima maiores quod reiciendis voluptatum dolor perspiciatis voluptas laudantium aperiam quis ab doloremque debitis ea pariatur repellendus? Illo, aspernatur ab. Cumque, inventore id commodi deserunt eveniet doloribus! Praesentium omnis doloribus impedit aliquid veritatis quisquam laboriosam! Nihil nemo dicta necessitatibus ut maxime totam, aut ea? Veniam nostrum laborum, voluptatibus quae fugit sapiente earum nesciunt quas atque iste quis unde! Dicta quod sint similique provident voluptates quo fugit. Ipsam vitae ducimus explicabo. A reprehenderit quod atque doloribus labore officia aspernatur nihil, illo architecto quibusdam possimus ad? Inventore molestiae adipisci natus, reprehenderit labore deleniti modi voluptates alias exercitationem amet provident explicabo nulla suscipit optio beatae quaerat eius odit quidem officiis ullam illo doloremque ipsam sunt officia. Magnam dicta dolorem quo unde! Perspiciatis accusantium officiis consectetur asperiores maiores, iste aliquam qui libero inventore. Tempora, nihil molestiae. Recusandae sed tempora vero ullam magni, cumque ipsum?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad deserunt, alias officia ipsa magnam excepturi earum aut veniam quasi laboriosam. Nam enim odio perspiciatis exercitationem, rem alias ducimus voluptas sapiente, sint voluptatum explicabo mollitia corporis. Fugiat dolore voluptatum ut et sint accusantium dolores minima ea consectetur blanditiis minus ipsam voluptas aliquid in amet eligendi itaque aut beatae, tempora recusandae! Eaque veritatis dignissimos culpa neque minus porro pariatur hic cupiditate, consequuntur harum obcaecati doloremque veniam iure omnis! In inventore reiciendis excepturi est molestiae pariatur quis ea explicabo quas similique laudantium maxime et omnis adipisci, modi illum corrupti debitis exercitationem. Quod officiis dicta architecto ducimus ea ipsam pariatur, reprehenderit fugiat ad culpa laborum animi molestiae esse ipsum nisi eveniet impedit maiores rerum soluta odio. Corrupti minima optio eius, distinctio non, qui beatae voluptate quidem porro cumque totam eveniet tempora, nesciunt sed! Similique dignissimos mollitia deserunt quaerat minima maiores suscipit labore neque? Sint odio fuga quaerat ratione asperiores animi eius nisi tempora, rerum minima maiores quod reiciendis voluptatum dolor perspiciatis voluptas laudantium aperiam quis ab doloremque debitis ea pariatur repellendus? Illo, aspernatur ab. Cumque, inventore id commodi deserunt eveniet doloribus! Praesentium omnis doloribus impedit aliquid veritatis quisquam laboriosam! Nihil nemo dicta necessitatibus ut maxime totam, aut ea? Veniam nostrum laborum, voluptatibus quae fugit sapiente earum nesciunt quas atque iste quis unde! Dicta quod sint similique provident voluptates quo fugit. Ipsam vitae ducimus explicabo. A reprehenderit quod atque doloribus labore officia aspernatur nihil, illo architecto quibusdam possimus ad? Inventore molestiae adipisci natus, reprehenderit labore deleniti modi voluptates alias exercitationem amet provident explicabo nulla suscipit optio beatae quaerat eius odit quidem officiis ullam illo doloremque ipsam sunt officia. Magnam dicta dolorem quo unde! Perspiciatis accusantium officiis consectetur asperiores maiores, iste aliquam qui libero inventore. Tempora, nihil molestiae. Recusandae sed tempora vero ullam magni, cumque ipsum?
+    </div>
+
+</body>
+</html>

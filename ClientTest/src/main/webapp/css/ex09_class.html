@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one { color: blue; }
+        .two { text-decoration: underline; }
+        .three { background-color: yellow; }
+
+        .four.five { font-style: italic;} /* four, five 클래스를 동시에 가지고 있어야 한다.*/
+        /*.four .five 와 완전히 의미가 다름. five를 찾되 조상 중에 four를 찾겠다.*/
+    </style>
+</head>
+<body>
+    <!-- ex09_class.html -->
+    <p class="one">문단입니다.</p>
+    <p class="two">문단입니다.</p>
+    <p class="three">문단입니다.</p>
+
+    <p class="one three two">문단입니다.</p>
+    <p class="four five">문단입니다.</p>
+
+    <!-- 
+
+        CSS Framework
+        - Bootstrap
+    -->
+
+</body>
+</html>

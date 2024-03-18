@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        
+            display 속성
+            - 요소를 화면에 출력되는 방식 조작
+            1. none
+            2. block
+            3. inline
+            4. inline-block
+        
+        */
+
+        /* .box {
+            border: 1px solid black;
+            display: inline;  인라인 태그처럼 출력하시오 
+            width: 100px; 성질까지도 인라인 태그로 변환되므로 안됨 > 조절하고 싶으면? 
+            height: 100px;
+        } */
+
+        /* .box {
+            인라인 성질 + 크기 조절 가능 
+            border: 1px solid black;
+            display : inline-block;
+            width: 100px;
+            height: 100px;
+        } */
+
+
+        /* 보이게 */
+        body:hover .box {
+            display : inline-block;
+        }
+
+        .box {
+     
+            border: 1px solid black;
+            display : none; /* 안보임 */
+            width: 100px;
+            height: 100px;
+        }
+
+        .link {
+            border : 1px solid black;
+            display: block;
+            width: 100px;
+            height: 100px;
+        }
+
+        #menu {
+            /* border : 1px solid red; 작업할 때 서투를때, 무조건 테두리를 줘서 확인 */
+            padding-left: 0;
+            text-align: center;
+        }
+
+        #menu > li {
+            /* border : 1px solid blue; */
+            display: inline;
+            /* margin-left : 0; */
+        }
+
+        #cat > img {
+            display: block; /* 블럭은 한줄에 1개만 */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- ex26_display.html -->
+
+    <!-- 출력 모양 바꿀 때 display 사용  -->
+    <ul id="menu">
+        <li>메뉴</li>
+        <li>메뉴</li>
+        <li>메뉴</li>
+        <li>메뉴</li>
+        <li>메뉴</li>
+        <li>메뉴</li>
+    </ul>
+
+
+    <h1>블럭태그</h1>
+    <div id="box1" class="box">상자1</div>
+    <div id="box2" class="box">상자2</div>
+    <div id="box3" class="box">상자3</div>
+
+    <h1>인라인태그</h1>
+    <a href="#!" id="link1" class="link">링크1</a>
+    <a href="#!" id="link2" class="link">링크2</a>
+    <a href="#!" id="link3" class="link">링크3</a>
+
+    <h1>고양이</h1> <!-- 한줄에 한마리? <br>? 블럭으로 -->
+    <div id="cat">
+        <img src="images/catty01.png">
+        <img src="images/catty01.png">
+        <img src="images/catty01.png">
+        <img src="images/catty01.png">
+        <img src="images/catty01.png">
+        <img src="images/catty01.png">
+        <img src="images/catty01.png">
+        <img src="images/catty01.png">
+        <img src="images/catty01.png">
+    </div>
+</body>
+</html>

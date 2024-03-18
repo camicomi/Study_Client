@@ -1,0 +1,10 @@
+.tbl {
+    border : 1px solid #555;
+    border-collapse: collapse;
+    font-family: Verdana;
+}
+
+.tbl1 tr {
+    border : 1px solid #555;
+
+}

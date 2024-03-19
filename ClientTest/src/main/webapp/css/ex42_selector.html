@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/8a0ce49d35.js" crossorigin="anonymous"></script>
+
+
+    <style>
+
+        /*
+        
+
+
+            CSS 선택자
+            1. :first-child
+                - 가상 클래스
+            2. ::before
+                - 가상 요소
+
+            전후 선택자
+            - 선택한 요소의 앞이나 뒤에 (자식으로) 내용을 추가하는 역할(컨텐츠 생성)
+            1. ::before
+                - :before
+
+            2. ::after
+                - :after
+        
+        
+        
+        */
+
+        p > span { color : coral; }
+
+        /* 드래그가 안됨 > 정식이 아니어서, 개발자도구에도 안나타남  */
+        /* p > span::before {
+
+            content : '문자열';
+            color : blue; 
+            font-size: 2rem;
+        }
+
+        p > span::after {
+
+            content: '홍길동';
+            color: tomato;
+            font-style: italic;
+        } */
+
+        p > span::before {
+            content : '😊'
+        }
+
+        /* Easy  
+        ttps://fontawesome.com/kits/8a0ce49d35/setup 
+        
+        <script src="https://kit.fontawesome.com/8a0ce49d35.js" crossorigin="anonymous"></script> 위에 붙여넣기 
+        */
+
+  
+
+        p > span::before {
+            font-family: FontAwesome;
+            font-weight: 400;
+            content: "\e07b";
+            margin-right: 5px;
+        }
+
+        i {
+            font-size: 10rem;
+            color: tomato;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- ex42_selector.html -->
+
+    <i class="fa-solid fa-dice"></i>  <!-- 일종의 폰트(글자)-->
+    <p>Lorem ipsum dolor sit amet consectetur <span><i class="fa-brands fa-tiktok"></i>adipisicing</span> elit. Debitis incidunt esse dicta iste, <span>blanditiis</span> eos fugit velit quas ipsam accusantium corporis, nostrum modi alias <span>corrupti</span> vitae eaque perferendis voluptatibus aspernatur.</p>
+
+
+</body>
+</html>

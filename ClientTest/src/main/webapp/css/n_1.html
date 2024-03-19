@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #weekly {
+            width: 1057px;
+            height: 250px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+
+        #weekly #title {
+            font-size: 14px;
+            color: #000000;
+
+        }
+
+        .weather {
+            height : 158.5px;
+            position: relative;
+            /* 부모 요소에 상대 위치 설정, absolute 사용 */
+        }
+
+        .weather .week {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            position: absolute; /*  절대 위치 설정 */
+            left: 0;
+            width: 100%; /* 부모 요소 너비에 맞춤*/
+            display : flex; /* 가로 배치 */
+            justify-content: space-between; /* 요소 간격 동일*/ 
+        }
+
+        .weather .date {
+            margin-top: 50px;
+            padding: 0;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            width: 100%; 
+            display : flex; 
+            justify-content: space-between; 
+
+        }
+
+        .weather .date li,
+        .weather .week li {
+            list-style: none;
+        }
+
+        #box {
+            width : 200px; 
+            height : 200px;
+            overflow: auto;
+
+
+        }
+
+        /* #weather_img {
+
+            width: 48px;
+            height: 48px;
+            background-image: url(images/naver_weather.png);
+            background-repeat: no-repeat;
+            background-position: 100px 100px;
+        } */
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- 네이버 날씨 따라 만들기 -->
+
+
+    <div id="weekly>
+
+        <h1 id="title">주간예보</h1>
+
+        <div class="weather">
+            <div class="container">
+                <ul class="week">
+                    <li>목</li>
+                    <li>금</li>
+                    <li>토</li>
+                    <li>일</li>
+                    <li>월</li>
+                    <li>화</li>
+                    <li>수</li>
+                </ul>
+                <ul class="date">
+                    <li>3.21</li>
+                    <li>3.22</li>
+                    <li>3.23</li>
+                    <li>3.24</li>
+                    <li>3.25</li>
+                    <li>3.26</li>
+                    <li>3.27</li>
+                </ul>
+            </div>
+            <div id="box">
+            <img src="images/naver_weather.png">
+            </div>
+            <div id="weather_img"></div>
+        </div>
+        <div class="morning">0°</div>
+    </div>
+
+</body>
+</html>

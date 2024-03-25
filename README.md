@@ -1,1 +1,1 @@
-# Study_HTML, CSS 공부
+# Study_HTML, CSS, JavaScript

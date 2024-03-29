@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*
+        
+
+        웹 페이지 디자인
+        - 사용할 컬러 지정
+        - 3~5가지
+
+        1. 주력색 > #00ABB3
+        2. 보조색 > #8BBCCC
+        3. 글자색 > #3C4048
+        4. 배경색 > #EAEAEA
+        
+        
+        */
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #EAEAEA;
+            
+
+        }
+
+        header {
+
+            background-color: #00ABB3;
+            height : 500px;
+            /* 자식의 부모 역할을 하기 위한 relative == static  */
+            position: relative;
+            left : 0;
+            top : 0;
+        }
+
+        header > h1 {
+            margin : 0;
+            padding: 0;
+            font-size: 100px;
+            font-variant: small-caps;
+            text-align: center;
+            padding-top: 150px;
+            color: #EAEAEA;
+        }
+
+        header > nav {
+            position: absolute;
+            bottom : 0;
+            width: 100%;
+            height: 50px;
+            /* text-align: center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid #3C4048;
+            background-color: #00ABB3;
+        }
+
+        header > nav > span {
+            display: inline-block;  /* 크기 조절 가능 */
+            width: 100px;
+            text-align: center;
+            cursor: pointer;
+            border-right: 1px dashed #3C4048;
+
+        }
+
+        header > nav > span:last-child {
+            border-right: 0;
+        }
+
+        header > nav > span > a {
+            font-weight: bold;
+            color : #FFF;
+            text-decoration: none;
+            
+        }
+
+        section {
+            width: 960px;
+            margin: 0 auto; /* 중앙 정렬 */
+            text-align: justify;
+        }
+
+        section h2 {
+            border-bottom: 1px dashed #3C4048;
+        }
+
+        section .back {
+            text-align : right;
+            margin-right : 10px;
+        }
+
+        section .back a {
+            text-decoration: none;
+            color: #3C4048;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- ex12.html -->
+    <!-- 포트폴리오 페이지 -->
+
+
+    <header>
+        <h1>Software Developer</h1>
+        <nav>
+            <span><a href="#item1">Java</a></span>
+            <span><a href="#item2">Oracle</a></span>
+            <span><a href="#item3">HTML</a></span>
+            <span><a href="#item4">CSS</a></span>
+            <span><a href="#item5">JavaScript</a></span>
+        </nav>
+
+    </header>
+    <section>
+
+        <!-- <input type="button" value="버튼" id="btn1"> -->
+
+        <article id="item1">
+            <h2>Java</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore aut assumenda nobis hic voluptas aliquid dolore qui provident, cupiditate, eaque totam. Ipsum excepturi quae odio eligendi rerum dolor suscipit est.</p>
+            <p>Dignissimos excepturi nemo accusamus modi voluptate alias quia sapiente perspiciatis delectus nihil error praesentium natus culpa expedita a possimus, repellendus autem. Minima laborum, esse delectus id excepturi consectetur. Porro, officia.</p>
+            <p>Quia recusandae velit minus consequatur molestiae? Fugiat sint reiciendis ipsam esse non doloribus officia facilis odit quisquam, aliquid laborum earum aperiam magni maiores eaque amet inventore tempore adipisci placeat excepturi?</p>
+            <p>Vel, omnis nihil, earum sed, quisquam sit aliquam quaerat voluptatum esse laboriosam cum doloremque aperiam tenetur corporis suscipit veniam sapiente aspernatur animi dolorum totam nemo! Est, officia aliquid! Omnis, ab?</p>
+            <p>In ullam illo voluptas perspiciatis, quas praesentium quis minima possimus adipisci facere quasi asperiores laudantium id rerum ab animi, similique, qui consequuntur magnam fugit aspernatur! Est nemo reiciendis porro dolore!</p>
+            <div class="back"><a href="#top">TOP</a></div>
+        </article>
+
+        <article id="item2">
+            <h2>Oracle</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, harum numquam optio deleniti nulla delectus nemo iure earum doloribus a? Adipisci corporis unde veniam enim velit expedita amet distinctio impedit?</p>
+            <p>Saepe suscipit temporibus minus in, ullam nostrum, exercitationem minima distinctio assumenda sed dolores fugiat nisi nemo facere. Quaerat odit quam pariatur illo consequuntur aliquid necessitatibus ex, placeat aperiam. Quo, facilis.</p>
+            <p>Cumque molestiae reprehenderit iste recusandae amet quaerat quis, magni nobis, eos reiciendis ab, nesciunt exercitationem minima illo accusamus nisi cupiditate ipsa illum adipisci maiores? Doloremque ex aut natus asperiores quaerat.</p>
+            <p>Esse fugit quasi rem laudantium consequatur velit sint nihil commodi est, nesciunt suscipit, at, magnam ducimus similique. Consequatur aspernatur excepturi quia fuga laboriosam. Incidunt quos repellat repellendus, totam eos illo.</p>
+            <p>Recusandae, itaque beatae! Tenetur dolor aut facilis delectus accusantium deleniti inventore doloremque, atque quae sint labore quos. Similique mollitia illo veritatis voluptatibus eius obcaecati, corrupti vitae consectetur, ullam amet nemo?</p>
+            <div class="back"><a href="#top">TOP</a></div>
+        </article>
+
+        <article id="item3">
+            <h2>HTML</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, cum quibusdam. Quisquam placeat explicabo asperiores quidem tempore tenetur corrupti nemo blanditiis quas excepturi! Nisi, deserunt dolore consequatur vitae laboriosam fugit.</p>
+            <p>Adipisci temporibus esse deleniti, ipsa ipsam dolorem placeat est ipsum in similique culpa aut saepe ea libero alias at iure non, atque reprehenderit quidem mollitia neque obcaecati veniam. Cum, culpa!</p>
+            <p>Eius quidem doloribus dolor labore nam at consectetur deserunt corporis facere ducimus sed illo dicta quas unde harum delectus numquam fugiat illum in facilis, esse rem omnis ratione. Animi, illum.</p>
+            <p>Aperiam quidem ullam consectetur labore modi quas, nam aliquid earum, autem, nemo obcaecati magnam officiis nobis facilis ad id suscipit eaque impedit? Provident ab sunt saepe iusto exercitationem labore voluptatibus!</p>
+            <p>Mollitia itaque vel culpa eius deleniti reiciendis corporis cum non recusandae facere explicabo, quaerat laudantium magnam placeat veritatis earum at. Quia tempora aut, sint cumque maiores unde molestias debitis delectus!</p>
+            <div class="back"><a href="#top">TOP</a></div>
+        </article>
+
+        <article id="item4">
+            <h2>CSS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consectetur aperiam accusamus eum minus repellat ipsa natus corrupti, aspernatur cum odio quia adipisci rerum. Quos vitae molestias officia quis error.</p>
+            <p>Nostrum vitae voluptates aperiam, optio ea eum illo dolores vel fugit nemo officia! In ipsum modi esse voluptate, facere distinctio odio nesciunt doloribus ex corrupti architecto repellendus eveniet voluptas nisi!</p>
+            <p>Molestias error itaque consequatur, in, recusandae ipsam eveniet rerum sint magnam saepe necessitatibus repellendus atque officia earum tempore quaerat quidem esse et ipsa autem. Possimus laborum ratione corrupti alias minus.</p>
+            <p>Et, nostrum! Reiciendis ducimus, sequi saepe quo ipsum laboriosam ullam aut soluta nulla dolor iusto omnis exercitationem facilis repudiandae nam velit quas veritatis labore minus totam in harum assumenda est?</p>
+            <p>Fugit assumenda quae provident laudantium unde ipsum reiciendis nam, inventore itaque molestiae placeat! Minus, dolores fugit facilis officiis minima nulla aliquid delectus fugiat itaque alias omnis impedit, voluptatibus quasi esse.</p>
+            <div class="back"><a href="#top">TOP</a></div>
+        </article>
+
+        <article id="item5">
+            <h2>JavaScript</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, est et. Non voluptates facilis eveniet possimus nulla voluptatem earum doloremque excepturi! Animi accusamus necessitatibus eius, reprehenderit nostrum et ab inventore.</p>
+            <p>Provident veritatis facilis quod impedit sequi nobis corporis aspernatur expedita in a, ullam facere, cum quae repudiandae eius? Ipsam laborum dolorem optio, eveniet incidunt quod perspiciatis eum ipsum rerum consectetur?</p>
+            <p>Officia culpa enim ex quibusdam? Ipsam, quia ducimus fugit ut quo, ad sunt porro exercitationem ipsa eveniet quis beatae reprehenderit autem blanditiis. Harum delectus minima non doloremque sunt cumque! Qui!</p>
+            <p>Culpa fuga exercitationem eum minus, dolor sint libero in consequatur necessitatibus? Eaque blanditiis, ullam ratione dolore adipisci consequuntur? Eligendi in molestias beatae deserunt possimus esse labore est error quod cum?</p>
+            <p>Quasi dolorum temporibus minima magni corrupti tempora porro earum, placeat similique commodi quibusdam accusamus quidem iure excepturi quaerat deleniti perspiciatis qui cupiditate laboriosam! Et libero pariatur corporis, sint labore quasi!</p>
+            <div class="back"><a href="#top">TOP</a></div>
+        </article>
+    </section>
+
+    
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script>
+        $('#btn1').click(function() {
+
+            //  부드러운 스크롤 이동
+            // $('html, body').animate({
+            //     scrollTop: ??
+            // }, 1000);
+
+            // alert($('#item2').position().top);
+
+            $('html, body').animate({
+            scrollTop: $('#item2').position().top
+            }, 1000);
+
+
+        });
+
+        $('header > nav > span > a').click(() => {
+            // http://127.0.0.1:5500/jquery/ex12.html#item1
+            let id = event.target.href.substr(event.target.href.lastIndexOf('#'));
+            //alert(id);
+
+            $('html, body').animate({
+                scrollTop: $(id).position().top - 50
+            }, $(id).position().top / 10);
+
+
+            // 기존의 행동을 제거 (스크롤 앵커 현상 제거)
+            event.stopPropagation();
+            return false;
+
+        });
+
+        $('section .back a').click(() => {
+
+        $('html, body').animate({
+        scrollTop: 0
+        }, 1000);
+
+        event.stopPropagation();
+        return false;
+
+        });
+
+        $(document).scroll(() => {
+            // 메뉴가 시야에서 사라지는 순간? > 메뉴를 붙박이로 만들기
+            // console.log(
+            //     $(document).scrollTop(), //  스크롤바의 위치
+            //     $('header > nav').position().top //고정된 메뉴의  Y 좌표값
+            // );
+
+            if ($(document).scrollTop() >= $('header > nav').position().top) {
+
+                $('header > nav').css({
+
+                    position: 'fixed',
+                    top : 0,
+                    bottom : ''
+                    
+                });
+
+                // positon : absolute;
+                // bottom : 0;
+
+                
+            }
+            // 상단 헤더가 눈에 보이는 순간 > 메뉴를 원래대로 되돌리기
+            if ($(document).scrollTop() <= $('header').outerHeight() - $('header > nav').outerHeight()) {
+
+                $('header > nav').css({
+
+            position: 'absolute',
+            top : '',
+            bottom : 0
+
+                });
+            }
+
+
+        });
+    </script>
+</body>
+</html>
